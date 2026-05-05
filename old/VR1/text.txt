@@ -1,0 +1,1 @@
+go mod init golangestudo - coloca pacote de terceiro
