@@ -1,1 +1,8 @@
-https://www.udemy.com/course/golang-do-zero-ao-avancado/learn/lecture/35805016#overview
+go mod init email
+
+pasta cmd
+pasta domain
+
+
+https://www.udemy.com/course/golang-do-zero-ao-avancado/learn/lecture/35804986#overview
+

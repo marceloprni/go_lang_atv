@@ -38,6 +38,7 @@ func Test_Create_Campaign(t *testing.T) {
 
 func Test_Create_ValidateDomainError(t *testing.T) {
 	assert := assert.New(t)
+	newCampaign.Name = ""
 
 	_, err := service.Create(newCampaign)
 
