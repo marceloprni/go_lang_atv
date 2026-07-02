@@ -8,6 +8,15 @@ import (
 	"github.com/stretchr/testify/mock"
 )
 
+var (
+	newCampaign = contract.NewCampaign{
+		Name:    "Test Y",
+		Content: "Body Hi!",
+		Emails:  []string{"teste1@test.com"},
+	}
+	service = Service{}
+)
+
 type repositoryMock struct {
 	mock.Mock
 }
@@ -16,16 +25,6 @@ func (r *repositoryMock) Save(campaign *Campaign) error {
 	args := r.Called(campaign)
 	return args.Error(0)
 }
-
-var (
-	newCampaign = contract.NewCampaign{
-		Name:    "Teste y",
-		Content: "Body",
-		Emails:  []string{"teste1@teste.com"},
-	}
-
-	service = Service{}
-)
 
 func Test_Create_Campaign(t *testing.T) {
 	assert := assert.New(t)
@@ -59,7 +58,7 @@ func Test_Save_Campaign(t *testing.T) {
 		func(campaign *Campaign) bool {
 			if campaign.Name != newCampaign.Name ||
 				campaign.Content != newCampaign.Content ||
-				len(campaign.Emails) != len(newCampaign.Emails) {
+				len(campaign.Contacts) != len(newCampaign.Emails) {
 				return false
 			}
 			return true
