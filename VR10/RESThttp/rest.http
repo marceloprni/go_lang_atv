@@ -1,8 +1,9 @@
 ### 
-POST http://localhost:8080/produto
+POST http://localhost:8080/campaigns
 content-type: application/json
 
 {   
-    "id": 123,
-    "produto": "computador"
+    "name": "pc_computer_campaign",
+    "content": "computador novo",
+    "emails" : ["teste@teste.com.br"]
 }
