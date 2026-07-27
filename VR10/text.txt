@@ -4,7 +4,7 @@ pasta cmd
 pasta domain
 
 
-https://www.udemy.com/course/golang-do-zero-ao-avancado/learn/lecture/36070334#overview
+https://www.udemy.com/course/golang-do-zero-ao-avancado/learn/lecture/36070350#overview
 
 /**/
 
