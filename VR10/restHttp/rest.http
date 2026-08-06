@@ -7,3 +7,6 @@ content-type: application/json
     "content": "computador novo",
     "emails" : ["teste@teste.com.br"]
 }
+
+####
+GET http://localhost:8080/campaigns
