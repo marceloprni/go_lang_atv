@@ -12,6 +12,6 @@ func (r *CampaignRepository) Save(campaign *campaign.Campaign) error {
 	return nil
 }
 
-func (r *CampaignRepository) Get() []campaign.Campaign {
-	return r.campaigns
+func (r *CampaignRepository) Get() ([]campaign.Campaign, error) {
+	return r.campaigns, nil
 }
